@@ -1,0 +1,114 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100%;
+  font-family: "Montserrat", "Fraunces", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 2rem 1.5rem;
+  max-width: 900px;
+  min-height: 100vh;
+}
+.card {
+  display: grid;
+  border: 1px solid #e4c6c6;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.img-custom {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.text-field {
+  margin: 1rem 1.5rem;
+}
+.header h4 {
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 5px;
+}
+.text-primary h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  line-height: 100%;
+}
+.content-text {
+  padding-bottom: 1rem;
+  color: hsl(228, 12%, 48%);
+  font-weight: 200;
+  font-size: 14px;
+}
+.price {
+  display: flex;
+  gap: 1.7rem;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.current-price{
+    font-size: 2rem;
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+.initial-price{
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-weight: 500;
+}
+.btn-success{
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(158, 36%, 37%);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+.btn-success:hover {
+    background-color: hsl(158, 47%, 16%);
+}
+
+/* desktop version */
+@media (min-width: 600px) {
+  .card {
+    display: flex;
+    max-width: 500px;
+  }
+  .img-custom {
+    display: block;
+    height: 100%;
+    width: 130%;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+  }
+  .text-field{
+    margin-top: 2rem;
+    padding-left: 3rem;
+  }
+  .header h4{
+    margin-bottom: 0.7rem;
+  }
+}
